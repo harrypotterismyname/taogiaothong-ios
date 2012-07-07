@@ -1,22 +1,306 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QG0-L8-BGv">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <scene sceneID="5">
+        <!--Table View Controller - HappyCarb-->
+        <scene sceneID="fos-x0-WP2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug3-UB-ddY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="N7V-tT-Mcc" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C2B-Z1-oKK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="4LQ-sw-xjU">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z5c-HK-nlY">
+                                    <rect key="frame" x="50" y="349" width="79" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Sign up">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="hVO-Qx-esY" kind="push" id="dsg-v4-cwr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cSv-fE-gdF">
+                                    <rect key="frame" x="183" y="349" width="79" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Sign in">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="E4w-Ix-OYq" kind="push" id="NuV-Op-8uX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="HappyCarb" id="0Sg-2F-V2d"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="360" y="110"/>
+        </scene>
+        <!--View Controller - Sign up-->
+        <scene sceneID="oxn-qE-gc1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEV-wh-tzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hVO-Qx-esY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mFF-78-Xq4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign up" id="d4D-lz-DsR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="a15-c7-X37">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I2w-dM-oVe">
+                                <rect key="frame" x="244" y="4" width="71" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="885" y="401"/>
+        </scene>
+        <!--View Controller - Sign in-->
+        <scene sceneID="216-0S-K6h">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCG-Rw-93h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="E4w-Ix-OYq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tVx-fU-7iL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HyX-sF-XZH">
+                                <rect key="frame" x="107" y="144" width="106" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Home Feed">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oHE-On-aqa" kind="modal" id="r6J-FD-q1K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign in" id="m8o-P7-uIK">
+                        <barButtonItem key="backBarButtonItem" title="Introduction" id="H4y-Ql-SK9"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Fp6-ot-diL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zz4-Qg-I9R">
+                                <rect key="frame" x="244" y="4" width="71" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="905" y="-193"/>
+        </scene>
+        <!--View Controller - Capture-->
+        <scene sceneID="17G-OS-KHu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRL-LU-ePm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Kdz-Dm-605" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nLu-JQ-fh7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="hKD-bw-kRo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Capture" id="kkO-2Z-k56"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Capture" id="tPY-pP-COz"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1977" y="-630"/>
+        </scene>
+        <!--View Controller - Profile-->
+        <scene sceneID="ldX-jq-FDP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLf-CW-gsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="S5x-zg-Cw4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V9B-uw-qVK">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Kkb-ru-L53">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Profile" id="WpG-wS-pfj"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="CjM-3R-fDy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1534" y="204"/>
+        </scene>
+        <!--View Controller - Favorite-->
+        <scene sceneID="Cf9-kk-NTw">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9m8-p3-sOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hMu-EG-z7c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ka7-ez-RVj">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="cWb-DZ-dQT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Favorite" id="fP4-6H-acO"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" id="Cx0-0h-htB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1989" y="-46"/>
+        </scene>
+        <!--View Controller - Todo-->
+        <scene sceneID="3kp-9g-mk4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6z-Un-0sQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0zd-Hg-c2p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3an-zJ-ms4">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="gJJ-1T-9sL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Todo" id="Ybh-HX-0Df"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Todo" id="xFY-v5-hpt"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1766" y="-1263"/>
+        </scene>
+        <!--View Controller - Home-->
+        <scene sceneID="eCg-at-rIv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="my5-iZ-Vw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ELX-X5-Mjp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MkJ-oo-5oe">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fyI-PO-LCm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <navigationBar key="tableFooterView" contentMode="scaleToFill" barStyle="blackOpaque" id="Atk-tb-20w">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <items>
+                                        <navigationItem title="HappyCarb" id="CYY-9r-6iE"/>
+                                    </items>
+                                </navigationBar>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="Gj5-ZS-k6j"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1277" y="-1421"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qLh-wa-64i">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2O4-XI-dym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController definesPresentationContext="YES" id="oHE-On-aqa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9GF-Xb-ZQJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="F0f-3i-LXx">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ELX-X5-Mjp" kind="relationship" relationship="viewControllers" id="dqz-Ih-beZ"/>
+                        <segue destination="0zd-Hg-c2p" kind="relationship" relationship="viewControllers" id="VoG-lD-RD5"/>
+                        <segue destination="Kdz-Dm-605" kind="relationship" relationship="viewControllers" id="jEO-xG-IEc"/>
+                        <segue destination="hMu-EG-z7c" kind="relationship" relationship="viewControllers" id="Bwp-Wq-GaT"/>
+                        <segue destination="S5x-zg-Cw4" kind="relationship" relationship="viewControllers" id="vdb-0w-L3F"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1260" y="-691"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ATM-Q7-VjD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vk-bI-2BL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="QG0-L8-BGv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5Nd-zF-WZI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N7V-tT-Mcc" kind="relationship" relationship="rootViewController" id="agj-hP-06w"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-174" y="110"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
