@@ -7,7 +7,7 @@
 //
 
 #import "SplashscreenController.h"
-
+#import "KeychainWrapper.h"
 
 
 @interface SplashscreenController ()
@@ -51,20 +51,80 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)NavigateToHomeFeed
+{
+    
+    UITabBarController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    
+    [self.navigationController presentModalViewController:controller animated:FALSE];
 
+}
 
 - (void)checkLogin
 {
     
     
     
-    //TODO: check login and navigate
+    
     // 1
     BOOL hasPin = [[NSUserDefaults standardUserDefaults] boolForKey:PIN_SAVED];
     
-    UITabBarController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"];
     
-    [self.navigationController presentModalViewController:controller animated:FALSE];
+    
+    // 2
+    if (hasPin) {
+        
+        // 3
+        //NSString *user = [[NSUserDefaults standardUserDefaults] stringForKey:USERNAME];
+        
+        //NSString *api_key = [[NSUserDefaults standardUserDefaults] stringForKey:API_KEY];
+        
+        
+        [self NavigateToHomeFeed];
+      
+       
+    
+    } else {
+        
+        
+         NSString *api_key = [KeychainWrapper keychainStringFromMatchingIdentifier:API_KEY];
+        
+        if (api_key!=nil)
+        {
+            
+            bool is_api_key_correct = true;
+            
+            if (is_api_key_correct)
+            {
+            //if api_key is correct, then set NSUserDefaults for PIN_SAVED, USERNAME, API_KEY
+                
+                NSString *username = [KeychainWrapper keychainStringFromMatchingIdentifier:USERNAME];
+                
+                [[NSUserDefaults standardUserDefaults] setValue:api_key forKey:API_KEY];
+                
+                [[NSUserDefaults standardUserDefaults] setValue:username forKey:USERNAME];
+                
+                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
+                
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                
+                [self checkLogin];
+            }
+            else {
+                //TODO: check api_key is correct or not, if not then return and ask users to login again
+            }
+            
+            NSLog(@"apikey:");
+       
+        }
+        else {
+            //api_key is nil => users have not login => display splashscreen
+        }
+
+       
+    }
+    
+  
     
     
     

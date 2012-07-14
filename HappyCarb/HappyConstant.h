@@ -4,6 +4,8 @@
 // Used for saving the user's name to NSUserDefaults.
 #define USERNAME @"username"
 
+#define API_KEY @"api_key"
+
 // Used to specify the application used in accessing the Keychain.
 #define APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 

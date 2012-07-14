@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HappyConstant.h"
 
 @interface SplashscreenController : UITableViewController
 @property (nonatomic) BOOL pinValidated;

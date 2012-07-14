@@ -10,6 +10,8 @@
 #import "User.h"
 #import "SBJson.h"
 
+#import "HappyConstant.h"
+
 #import "KeychainWrapper.h"
 
 @interface LoginViewController ()
@@ -63,9 +65,23 @@
     
     api_key = user.findApi_key; //just testing
     
-    [KeychainWrapper  createKeychainValue:api_key forIdentifier:@"api_key"];
+    [KeychainWrapper  createKeychainValue:api_key forIdentifier:API_KEY ];
     
-    username_text.text = [KeychainWrapper keychainStringFromMatchingIdentifier:@"api_key"];
+    [KeychainWrapper  createKeychainValue:user.username  forIdentifier:USERNAME ];
+    
+
+    
+    [[NSUserDefaults standardUserDefaults] setValue:api_key forKey:API_KEY];
+    
+    [[NSUserDefaults standardUserDefaults] setValue:user.username forKey:USERNAME];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:PIN_SAVED];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"** Key saved successfully to Keychain!!");
+
+    
+   // username_text.text = [KeychainWrapper keychainStringFromMatchingIdentifier:@"api_key"];
     
     
     
