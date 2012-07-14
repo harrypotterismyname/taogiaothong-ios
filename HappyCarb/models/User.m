@@ -32,7 +32,7 @@
     //http://localhost:6868/login.json?user_session[username]=suoinguon&user_session[password]=123asd
     
     
-    NSString *login_url = [NSString stringWithFormat:@"http://localhost:6868/login.json?user_session[username]=%@&user_session[password]=%@", self.username, self.password];
+    NSString *login_url = [NSString stringWithFormat:@"http://happycarb.com/login.json?user_session[username]=%@&user_session[password]=%@", self.username, self.password];
     
   
     

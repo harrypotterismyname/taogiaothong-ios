@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2F13E315B1B7B80038FDAF /* SplashscreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E215B1B7B80038FDAF /* SplashscreenController.m */; };
+		2A2F13E715B1BA110038FDAF /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E615B1BA110038FDAF /* MainTabBarController.m */; };
+		2A2F13EA15B1BB7D0038FDAF /* MainUINagivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */; };
 		2A7E431415A9A8830076D363 /* goalsetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E431315A9A8830076D363 /* goalsetting.png */; };
 		2A7E432315AC690E0076D363 /* welcome screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E432215AC690E0076D363 /* welcome screen.png */; };
 		2A7E432715AC6A220076D363 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E432615AC6A220076D363 /* LoginViewController.m */; };
@@ -36,7 +39,13 @@
 		2AA0A5E715A7F9070084892E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA0A5C815A7F9070084892E /* Foundation.framework */; };
 		2AA0A5EF15A7F9070084892E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA0A5ED15A7F9070084892E /* InfoPlist.strings */; };
 		2AA0A5F215A7F9070084892E /* HappyCarbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A5F115A7F9070084892E /* HappyCarbTests.m */; };
-		2AD2129115B139C300EE0203 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129015B139C300EE0203 /* KeychainItemWrapper.m */; };
+		2AD2129115B139C300EE0203 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129015B139C300EE0203 /* KeychainWrapper.m */; };
+		2AD212A315B1524500EE0203 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD212A215B1524500EE0203 /* Security.framework */; };
+		2AD212A615B171CE00EE0203 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD212A515B171CE00EE0203 /* icon.png */; };
+		2AD212A815B1720D00EE0203 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD212A715B1720D00EE0203 /* Icon@2x.png */; };
+		2AD212A915B1727900EE0203 /* KeychainWrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2128F15B139C300EE0203 /* KeychainWrapper.h */; };
+		2AD212AA15B1727900EE0203 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129015B139C300EE0203 /* KeychainWrapper.m */; };
+		2AD212AB15B1727900EE0203 /* HappyConstant.h in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129D15B14F4200EE0203 /* HappyConstant.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2F13E115B1B7B80038FDAF /* SplashscreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashscreenController.h; sourceTree = "<group>"; };
+		2A2F13E215B1B7B80038FDAF /* SplashscreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashscreenController.m; sourceTree = "<group>"; };
+		2A2F13E515B1BA110038FDAF /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		2A2F13E615B1BA110038FDAF /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		2A2F13E815B1BB7D0038FDAF /* MainUINagivationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUINagivationViewController.h; sourceTree = "<group>"; };
+		2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUINagivationViewController.m; sourceTree = "<group>"; };
 		2A7E431315A9A8830076D363 /* goalsetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsetting.png; sourceTree = "<group>"; };
 		2A7E432215AC690E0076D363 /* welcome screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome screen.png"; sourceTree = "<group>"; };
 		2A7E432515AC6A220076D363 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -100,8 +115,12 @@
 		2AA0A5EE15A7F9070084892E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AA0A5F015A7F9070084892E /* HappyCarbTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HappyCarbTests.h; sourceTree = "<group>"; };
 		2AA0A5F115A7F9070084892E /* HappyCarbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyCarbTests.m; sourceTree = "<group>"; };
-		2AD2128F15B139C300EE0203 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		2AD2129015B139C300EE0203 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		2AD2128F15B139C300EE0203 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		2AD2129015B139C300EE0203 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		2AD2129D15B14F4200EE0203 /* HappyConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyConstant.h; sourceTree = "<group>"; };
+		2AD212A215B1524500EE0203 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2AD212A515B171CE00EE0203 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../hlc wireframe/icon.png"; sourceTree = "<group>"; };
+		2AD212A715B1720D00EE0203 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../../hlc wireframe/Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD212A315B1524500EE0203 /* Security.framework in Frameworks */,
 				2AA0A5C715A7F9070084892E /* UIKit.framework in Frameworks */,
 				2AA0A5C915A7F9070084892E /* Foundation.framework in Frameworks */,
 				2AA0A5CB15A7F9070084892E /* CoreGraphics.framework in Frameworks */,
@@ -173,6 +193,7 @@
 		2AA0A5B715A7F9060084892E = {
 			isa = PBXGroup;
 			children = (
+				2AD212A215B1524500EE0203 /* Security.framework */,
 				2AA0A5CC15A7F9070084892E /* HappyCarb */,
 				2AA0A5EA15A7F9070084892E /* HappyCarbTests */,
 				2AA0A5C515A7F9070084892E /* Frameworks */,
@@ -203,6 +224,7 @@
 		2AA0A5CC15A7F9070084892E /* HappyCarb */ = {
 			isa = PBXGroup;
 			children = (
+				2AD212A415B171B500EE0203 /* Images */,
 				2AB8284B15B1356C0035F16E /* Classes */,
 				2AB8284915B135490035F16E /* Controllers */,
 				2A7E4A1915ADCF5A0076D363 /* models */,
@@ -262,6 +284,12 @@
 				2A7E432615AC6A220076D363 /* LoginViewController.m */,
 				2AA0A5DB15A7F9070084892E /* ViewController.h */,
 				2AA0A5DC15A7F9070084892E /* ViewController.m */,
+				2A2F13E115B1B7B80038FDAF /* SplashscreenController.h */,
+				2A2F13E215B1B7B80038FDAF /* SplashscreenController.m */,
+				2A2F13E515B1BA110038FDAF /* MainTabBarController.h */,
+				2A2F13E615B1BA110038FDAF /* MainTabBarController.m */,
+				2A2F13E815B1BB7D0038FDAF /* MainUINagivationViewController.h */,
+				2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -269,10 +297,20 @@
 		2AB8284B15B1356C0035F16E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2AD2128F15B139C300EE0203 /* KeychainItemWrapper.h */,
-				2AD2129015B139C300EE0203 /* KeychainItemWrapper.m */,
+				2AD2128F15B139C300EE0203 /* KeychainWrapper.h */,
+				2AD2129015B139C300EE0203 /* KeychainWrapper.m */,
+				2AD2129D15B14F4200EE0203 /* HappyConstant.h */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		2AD212A415B171B500EE0203 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AD212A515B171CE00EE0203 /* icon.png */,
+				2AD212A715B1720D00EE0203 /* Icon@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +387,8 @@
 				2AA0A5DA15A7F9070084892E /* MainStoryboard.storyboard in Resources */,
 				2A7E431415A9A8830076D363 /* goalsetting.png in Resources */,
 				2A7E432315AC690E0076D363 /* welcome screen.png in Resources */,
+				2AD212A615B171CE00EE0203 /* icon.png in Resources */,
+				2AD212A815B1720D00EE0203 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +423,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD212A915B1727900EE0203 /* KeychainWrapper.h in Sources */,
+				2AD212AA15B1727900EE0203 /* KeychainWrapper.m in Sources */,
+				2AD212AB15B1727900EE0203 /* HappyConstant.h in Sources */,
 				2AA0A5D315A7F9070084892E /* main.m in Sources */,
 				2AA0A5D715A7F9070084892E /* AppDelegate.m in Sources */,
 				2AA0A5DD15A7F9070084892E /* ViewController.m in Sources */,
@@ -400,6 +443,9 @@
 				2A7E49FC15ADCA120076D363 /* SBJsonUTF8Stream.m in Sources */,
 				2A7E49FD15ADCA120076D363 /* SBJsonWriter.m in Sources */,
 				2A7E4A1F15ADCF9A0076D363 /* User.m in Sources */,
+				2A2F13E315B1B7B80038FDAF /* SplashscreenController.m in Sources */,
+				2A2F13E715B1BA110038FDAF /* MainTabBarController.m in Sources */,
+				2A2F13EA15B1BB7D0038FDAF /* MainUINagivationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AA0A5F215A7F9070084892E /* HappyCarbTests.m in Sources */,
-				2AD2129115B139C300EE0203 /* KeychainItemWrapper.m in Sources */,
+				2AD2129115B139C300EE0203 /* KeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

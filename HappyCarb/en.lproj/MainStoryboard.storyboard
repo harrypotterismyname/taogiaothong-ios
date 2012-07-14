@@ -6,11 +6,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Happycarb-->
+        <!--Splashscreen Controller - Happycarb-->
         <scene sceneID="fos-x0-WP2">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ug3-UB-ddY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="N7V-tT-Mcc" sceneMemberID="viewController">
+                <tableViewController id="N7V-tT-Mcc" customClass="SplashscreenController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C2B-Z1-oKK">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,11 +349,11 @@
             </objects>
             <point key="canvasLocation" x="1277" y="-1421"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller - MainTabBarController-->
         <scene sceneID="qLh-wa-64i">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2O4-XI-dym" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController definesPresentationContext="YES" id="oHE-On-aqa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" title="MainTabBarController" definesPresentationContext="YES" id="oHE-On-aqa" customClass="MainTabBarController" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9GF-Xb-ZQJ"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="F0f-3i-LXx">
@@ -372,11 +372,11 @@
             </objects>
             <point key="canvasLocation" x="1260" y="-691"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--MainUI Nagivation View Controller-->
         <scene sceneID="ATM-Q7-VjD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vk-bI-2BL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="QG0-L8-BGv" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="QG0-L8-BGv" customClass="MainUINagivationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5Nd-zF-WZI">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -400,6 +400,15 @@
                 <relationship kind="outlet" name="password_text" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="username_text" candidateClass="UITextField"/>
             </relationships>
+        </class>
+        <class className="MainTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainTabBarController.h"/>
+        </class>
+        <class className="MainUINagivationViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINagivationViewController.h"/>
+        </class>
+        <class className="SplashscreenController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashscreenController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

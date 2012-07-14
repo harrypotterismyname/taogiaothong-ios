@@ -10,6 +10,8 @@
 #import "User.h"
 #import "SBJson.h"
 
+#import "KeychainWrapper.h"
+
 @interface LoginViewController ()
 
 
@@ -60,12 +62,14 @@
     user.password = password_text.text;//@"123asd";
     
     api_key = user.findApi_key; //just testing
-   
-    username_text.text  = api_key;
     
-   
-
+    [KeychainWrapper  createKeychainValue:api_key forIdentifier:@"api_key"];
     
+    username_text.text = [KeychainWrapper keychainStringFromMatchingIdentifier:@"api_key"];
+    
+    
+    
+       
     [self.delegate LoginViewControllerDidSave:self];
 }
 
