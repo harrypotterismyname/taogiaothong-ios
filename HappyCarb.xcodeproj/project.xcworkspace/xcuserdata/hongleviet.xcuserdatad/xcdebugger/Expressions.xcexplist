@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[User findApi_key]:User.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dictionary valueForKey:@&quot;api_key&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "login_url">
+            </PersistentString>
+            <PersistentString
+               value = "*login_url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

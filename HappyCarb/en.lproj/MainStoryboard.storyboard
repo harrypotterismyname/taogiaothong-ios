@@ -214,6 +214,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="password_text" destination="Ckk-Z0-f2W" id="Eom-N2-lzD"/>
                         <outlet property="username_text" destination="Cs7-FU-rbc" id="p4s-xS-Efb"/>
                     </connections>
                 </viewController>
@@ -391,6 +392,16 @@
         <image name="goalsetting.png" width="492" height="334"/>
         <image name="welcome screen.png" width="315" height="219"/>
     </resources>
+    <classes>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="password_text" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username_text" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

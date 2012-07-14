@@ -28,7 +28,14 @@
 
 - (NSString *)findApi_key
 {
-    NSString *login_url = [NSString stringWithFormat:@"http://happycarb.com/login.json?user_session[username]=%@&user_session[password]=%@", self.username, self.password];
+    
+    //http://localhost:6868/login.json?user_session[username]=suoinguon&user_session[password]=123asd
+    
+    
+    NSString *login_url = [NSString stringWithFormat:@"http://localhost:6868/login.json?user_session[username]=%@&user_session[password]=%@", self.username, self.password];
+    
+  
+    
     NSURL *url = [NSURL URLWithString: login_url];
     
     NSError *error = nil;
@@ -43,16 +50,18 @@
     
     if (jsonString) {
         SBJsonParser *json = [[SBJsonParser alloc] init];   
-        NSArray *results = [json objectWithString:jsonString error:&error];
-      
+        NSDictionary *results = [json objectWithString:jsonString error:&error];
         
-        for (NSDictionary *dictionary in results) {
+       // NSInteger counter = results.count;
+       // NSLog( [NSString stringWithFormat:@"%d", counter] );
+        
+//        for (NSDictionary *dictionary in results) {
 
             
-            self.api_key = [dictionary valueForKey:@"api_key"];
+            self.api_key = [results valueForKey:@"api_key"];
           
       
-        }
+  //      }
     }
     return self.api_key;  
 }

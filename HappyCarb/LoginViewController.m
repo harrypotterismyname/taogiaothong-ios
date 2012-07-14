@@ -53,15 +53,15 @@
 - (IBAction)done:(id)sender
 {
     
-       username_text.text = @"sdfsd";
+      
     
     User *user = [User alloc];
-    user.username = @"viethong.le@gmail.com";
-    user.password = @"123asd";
+    user.username = username_text.text; //@"huong_mua_he_trong_toi@yahoo.com";
+    user.password = password_text.text;//@"123asd";
     
-    username_text.text = user.findApi_key;
+    api_key = user.findApi_key; //just testing
    
-
+    username_text.text  = api_key;
     
    
 
