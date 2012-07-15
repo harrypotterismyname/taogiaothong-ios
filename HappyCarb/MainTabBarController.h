@@ -10,5 +10,7 @@
 
 @interface MainTabBarController : UITabBarController
 
-
+//@property (nonatomic) NSUInteger selectedIndex;
+//@property (strong, nonatomic) NSArray *viewControllers;
+//@property (strong, nonatomic) UITabBar *bar;
 @end

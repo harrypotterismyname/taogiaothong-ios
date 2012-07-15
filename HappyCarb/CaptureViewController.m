@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+//ref: http://stackoverflow.com/questions/7813379/what-does-receiver-type-calayer-for-instance-message-is-a-forward-declaration
+#import <QuartzCore/QuartzCore.h>
 #import "CaptureViewController.h"
 
 @interface CaptureViewController ()
@@ -31,6 +33,8 @@
     
       [self hideTabBar:self.tabBarController]; 
     
+
+    
     
 	// Do any additional setup after loading the view.
     
@@ -42,6 +46,18 @@
     if (FALSE) {
         	self.imgPicker.showsCameraControls=YES;
     }
+    
+    //re-initilize image, to avoid show the last photo
+    imageView.image = nil;
+    
+    //ref: http://stackoverflow.com/questions/205431/rounded-corners-on-uiimage
+    CALayer * layr = [imageView layer];
+    [layr setMasksToBounds:YES];
+    [layr setCornerRadius:6.0];
+    
+    // You can even add a border
+    [layr setBorderWidth:1.0];
+    [layr setBorderColor:[[UIColor grayColor] CGColor]];
     
      [self presentModalViewController:self.imgPicker animated:YES];
 
@@ -64,6 +80,19 @@
         [self presentModalViewController:self.imgPicker animated:YES];
     }
 
+- (IBAction)exit{
+    
+    
+    self.tabBarController.selectedIndex = 0;
+    
+    
+    //[self dismissModalViewControllerAnimated:FALSE];
+    
+    [self showTabBar:self.tabBarController ];
+    //[self viewDidUnload     ];
+    //[self viewWillDisappear:TRUE];
+
+}
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
 	image.image = img;	
@@ -119,6 +148,12 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker { 
     [picker dismissModalViewControllerAnimated:YES]; 
+    
+    if (imageView.image== nil)//if does not capture yet => exit
+    {
+    
+        [self exit];
+    }
 }
 
 

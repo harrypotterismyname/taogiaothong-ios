@@ -3,16 +3,52 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[MainTabBarController tabBar:didSelectItem:]:MainTabBarController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBar.selectedIndex">
+            </PersistentString>
+            <PersistentString
+               value = "_bar.items">
+            </PersistentString>
+            <PersistentString
+               value = "self.selectedIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[User findApi_key]:User.m">
          <PersistentStrings>
+            <PersistentString
+               value = "*login_url">
+            </PersistentString>
             <PersistentString
                value = "[dictionary valueForKey:@&quot;api_key&quot;]">
             </PersistentString>
             <PersistentString
                value = "login_url">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CaptureViewController imagePickerControllerDidCancel:]:CaptureViewController.m">
+         <PersistentStrings>
             <PersistentString
-               value = "*login_url">
+               value = "imageView.image">
+            </PersistentString>
+            <PersistentString
+               value = "imageView.image == nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainTabBarController viewDidLoad]:MainTabBarController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController.selectedIndex">
+            </PersistentString>
+            <PersistentString
+               value = "self.selectedIndex">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

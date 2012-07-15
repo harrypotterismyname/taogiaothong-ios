@@ -21,6 +21,7 @@
 
 @property(nonatomic,retain)IBOutlet UIBarButtonItem *saveImageBotton;
 - (IBAction)grabImage;
+- (IBAction)exit;
 
 
 @end
