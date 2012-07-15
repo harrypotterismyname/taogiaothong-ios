@@ -96,6 +96,8 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
 	image.image = img;	
+    
+    
 	[[picker parentViewController] dismissModalViewControllerAnimated:YES];
 }
 

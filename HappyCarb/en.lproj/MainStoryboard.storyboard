@@ -262,16 +262,16 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="funky_background_grayscale.png" id="jxl-aB-9ar">
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" image="look.com.ua-43852.jpeg" id="jxl-aB-9ar">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Z8w-wS-Oi8">
-                                <rect key="frame" x="6" y="57" width="308" height="308"/>
+                                <rect key="frame" x="16" y="67" width="288" height="288"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zWi-3W-XkG">
-                                <rect key="frame" x="66" y="382" width="68" height="68"/>
+                                <rect key="frame" x="66" y="372" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Retake" image="notok68.png">
@@ -286,7 +286,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oJA-Vb-LZP">
-                                <rect key="frame" x="186" y="382" width="68" height="68"/>
+                                <rect key="frame" x="185" y="372" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="ok68.png">
@@ -298,7 +298,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WfM-oB-jSK">
-                                <rect key="frame" x="275" y="1" width="38" height="38"/>
+                                <rect key="frame" x="262" y="10" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="close.png">
@@ -460,8 +460,8 @@
     </scenes>
     <resources>
         <image name="close.png" width="42" height="42"/>
-        <image name="funky_background_grayscale.png" width="640" height="960"/>
         <image name="goalsetting.png" width="492" height="334"/>
+        <image name="look.com.ua-43852.jpeg" width="640" height="960"/>
         <image name="notok68.png" width="68" height="68"/>
         <image name="ok68.png" width="68" height="68"/>
         <image name="welcome screen.png" width="315" height="219"/>

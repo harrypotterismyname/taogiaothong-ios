@@ -25,6 +25,8 @@
 		2A2F142B15B2E4080038FDAF /* funky_background_grayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F142A15B2E4080038FDAF /* funky_background_grayscale.png */; };
 		2A2F142E15B2E4F30038FDAF /* notok68.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F142C15B2E4F20038FDAF /* notok68.png */; };
 		2A2F142F15B2E4F30038FDAF /* ok68.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F142D15B2E4F20038FDAF /* ok68.png */; };
+		2A2F143115B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F143015B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg */; };
+		2A2F143315B30D2D0038FDAF /* look.com.ua-43852.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F143215B30D2D0038FDAF /* look.com.ua-43852.jpeg */; };
 		2A7E431415A9A8830076D363 /* goalsetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E431315A9A8830076D363 /* goalsetting.png */; };
 		2A7E432315AC690E0076D363 /* welcome screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E432215AC690E0076D363 /* welcome screen.png */; };
 		2A7E432715AC6A220076D363 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E432615AC6A220076D363 /* LoginViewController.m */; };
@@ -97,6 +99,8 @@
 		2A2F142A15B2E4080038FDAF /* funky_background_grayscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funky_background_grayscale.png; sourceTree = "<group>"; };
 		2A2F142C15B2E4F20038FDAF /* notok68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notok68.png; sourceTree = "<group>"; };
 		2A2F142D15B2E4F20038FDAF /* ok68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok68.png; sourceTree = "<group>"; };
+		2A2F143015B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg; sourceTree = "<group>"; };
+		2A2F143215B30D2D0038FDAF /* look.com.ua-43852.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "look.com.ua-43852.jpeg"; sourceTree = "<group>"; };
 		2A7E431315A9A8830076D363 /* goalsetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsetting.png; sourceTree = "<group>"; };
 		2A7E432215AC690E0076D363 /* welcome screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome screen.png"; sourceTree = "<group>"; };
 		2A7E432515AC6A220076D363 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 		2A2F142115B2DFD30038FDAF /* bg */ = {
 			isa = PBXGroup;
 			children = (
+				2A2F143215B30D2D0038FDAF /* look.com.ua-43852.jpeg */,
+				2A2F143015B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg */,
 				2A2F142215B2DFE50038FDAF /* Green-Stripe.jpeg */,
 				2A2F142A15B2E4080038FDAF /* funky_background_grayscale.png */,
 				2A2F142815B2E1DA0038FDAF /* funky_background_orange.jpeg */,
@@ -467,6 +473,8 @@
 				2A2F142B15B2E4080038FDAF /* funky_background_grayscale.png in Resources */,
 				2A2F142E15B2E4F30038FDAF /* notok68.png in Resources */,
 				2A2F142F15B2E4F30038FDAF /* ok68.png in Resources */,
+				2A2F143115B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg in Resources */,
+				2A2F143315B30D2D0038FDAF /* look.com.ua-43852.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
