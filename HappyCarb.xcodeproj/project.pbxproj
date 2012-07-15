@@ -10,6 +10,8 @@
 		2A2F13E315B1B7B80038FDAF /* SplashscreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E215B1B7B80038FDAF /* SplashscreenController.m */; };
 		2A2F13E715B1BA110038FDAF /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E615B1BA110038FDAF /* MainTabBarController.m */; };
 		2A2F13EA15B1BB7D0038FDAF /* MainUINagivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */; };
+		2A2F13F615B1D7C30038FDAF /* TodoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13F515B1D7C30038FDAF /* TodoController.m */; };
+		2A2F140515B1E5120038FDAF /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F140415B1E5120038FDAF /* CaptureViewController.m */; };
 		2A7E431415A9A8830076D363 /* goalsetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E431315A9A8830076D363 /* goalsetting.png */; };
 		2A7E432315AC690E0076D363 /* welcome screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E432215AC690E0076D363 /* welcome screen.png */; };
 		2A7E432715AC6A220076D363 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E432615AC6A220076D363 /* LoginViewController.m */; };
@@ -65,6 +67,10 @@
 		2A2F13E615B1BA110038FDAF /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		2A2F13E815B1BB7D0038FDAF /* MainUINagivationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUINagivationViewController.h; sourceTree = "<group>"; };
 		2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUINagivationViewController.m; sourceTree = "<group>"; };
+		2A2F13F415B1D7C30038FDAF /* TodoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoController.h; sourceTree = "<group>"; };
+		2A2F13F515B1D7C30038FDAF /* TodoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoController.m; sourceTree = "<group>"; };
+		2A2F140315B1E5120038FDAF /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		2A2F140415B1E5120038FDAF /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
 		2A7E431315A9A8830076D363 /* goalsetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsetting.png; sourceTree = "<group>"; };
 		2A7E432215AC690E0076D363 /* welcome screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome screen.png"; sourceTree = "<group>"; };
 		2A7E432515AC6A220076D363 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -148,6 +154,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2F13F215B1D72D0038FDAF /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E432515AC6A220076D363 /* LoginViewController.h */,
+				2A7E432615AC6A220076D363 /* LoginViewController.m */,
+				2AA0A5DB15A7F9070084892E /* ViewController.h */,
+				2AA0A5DC15A7F9070084892E /* ViewController.m */,
+				2A2F13E115B1B7B80038FDAF /* SplashscreenController.h */,
+				2A2F13E215B1B7B80038FDAF /* SplashscreenController.m */,
+				2A2F13E515B1BA110038FDAF /* MainTabBarController.h */,
+				2A2F13E615B1BA110038FDAF /* MainTabBarController.m */,
+				2A2F13E815B1BB7D0038FDAF /* MainUINagivationViewController.h */,
+				2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */,
+			);
+			name = Introduction;
+			sourceTree = "<group>";
+		};
 		2A7E49D815ADCA110076D363 /* SBjson */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,16 +303,11 @@
 		2AB8284915B135490035F16E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2A7E432515AC6A220076D363 /* LoginViewController.h */,
-				2A7E432615AC6A220076D363 /* LoginViewController.m */,
-				2AA0A5DB15A7F9070084892E /* ViewController.h */,
-				2AA0A5DC15A7F9070084892E /* ViewController.m */,
-				2A2F13E115B1B7B80038FDAF /* SplashscreenController.h */,
-				2A2F13E215B1B7B80038FDAF /* SplashscreenController.m */,
-				2A2F13E515B1BA110038FDAF /* MainTabBarController.h */,
-				2A2F13E615B1BA110038FDAF /* MainTabBarController.m */,
-				2A2F13E815B1BB7D0038FDAF /* MainUINagivationViewController.h */,
-				2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */,
+				2A2F13F215B1D72D0038FDAF /* Introduction */,
+				2A2F13F415B1D7C30038FDAF /* TodoController.h */,
+				2A2F13F515B1D7C30038FDAF /* TodoController.m */,
+				2A2F140315B1E5120038FDAF /* CaptureViewController.h */,
+				2A2F140415B1E5120038FDAF /* CaptureViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -446,6 +464,8 @@
 				2A2F13E315B1B7B80038FDAF /* SplashscreenController.m in Sources */,
 				2A2F13E715B1BA110038FDAF /* MainTabBarController.m in Sources */,
 				2A2F13EA15B1BB7D0038FDAF /* MainUINagivationViewController.m in Sources */,
+				2A2F13F615B1D7C30038FDAF /* TodoController.m in Sources */,
+				2A2F140515B1E5120038FDAF /* CaptureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

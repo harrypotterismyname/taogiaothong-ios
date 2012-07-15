@@ -93,6 +93,7 @@
         {
             
             bool is_api_key_correct = true;
+            //TODO: check with server side if current api_key correct or not
             
             if (is_api_key_correct)
             {
@@ -100,6 +101,8 @@
                 
                 NSString *username = [KeychainWrapper keychainStringFromMatchingIdentifier:USERNAME];
                 
+                
+                //ref: http://www.raywenderlich.com/6475/basic-security-in-ios-5-tutorial-part-1
                 [[NSUserDefaults standardUserDefaults] setValue:api_key forKey:API_KEY];
                 
                 [[NSUserDefaults standardUserDefaults] setValue:username forKey:USERNAME];
