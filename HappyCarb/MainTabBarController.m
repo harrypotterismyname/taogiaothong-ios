@@ -64,8 +64,13 @@
         
         //re-load ViewControl Camera to trigger Camera View
         
-        UIViewController *cameraVC =    [self.viewControllers objectAtIndex:idx];
-        [cameraVC viewDidLoad ];
+        UINavigationController *cameraVC =    [self.viewControllers objectAtIndex:idx];
+        
+          UIViewController *TakePitureVC = [cameraVC.viewControllers objectAtIndex:0];
+
+        
+            
+        [TakePitureVC viewDidLoad ];
     
     }
     

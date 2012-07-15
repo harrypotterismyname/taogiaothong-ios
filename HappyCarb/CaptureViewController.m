@@ -9,6 +9,7 @@
 //ref: http://stackoverflow.com/questions/7813379/what-does-receiver-type-calayer-for-instance-message-is-a-forward-declaration
 #import <QuartzCore/QuartzCore.h>
 #import "CaptureViewController.h"
+#import "PhotoUploadPrepareViewController.h"
 
 @interface CaptureViewController ()
 
@@ -212,6 +213,13 @@
 }
 
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"PhotoUploadPrepareSegue"]){
+        PhotoUploadPrepareViewController *cvc = (PhotoUploadPrepareViewController *)[segue destinationViewController];
+        
+        
 
+    }
+}
 
 @end
