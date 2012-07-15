@@ -30,6 +30,8 @@
 		2A2F143815B30F5B0038FDAF /* Thing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F143715B30F5B0038FDAF /* Thing.m */; };
 		2A2F143E15B32A910038FDAF /* PhotoUploadPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F143D15B32A900038FDAF /* PhotoUploadPrepareViewController.m */; };
 		2A2F144415B332610038FDAF /* TakePictureNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F144315B3325E0038FDAF /* TakePictureNavigationController.m */; };
+		2A2F144615B355E60038FDAF /* upload_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F144515B355E60038FDAF /* upload_note.png */; };
+		2A2F144915B359890038FDAF /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F144815B359890038FDAF /* UIPlaceHolderTextView.m */; };
 		2A7E431415A9A8830076D363 /* goalsetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E431315A9A8830076D363 /* goalsetting.png */; };
 		2A7E432315AC690E0076D363 /* welcome screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E432215AC690E0076D363 /* welcome screen.png */; };
 		2A7E432715AC6A220076D363 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E432615AC6A220076D363 /* LoginViewController.m */; };
@@ -110,6 +112,9 @@
 		2A2F143D15B32A900038FDAF /* PhotoUploadPrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadPrepareViewController.m; sourceTree = "<group>"; };
 		2A2F144215B3325C0038FDAF /* TakePictureNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureNavigationController.h; sourceTree = "<group>"; };
 		2A2F144315B3325E0038FDAF /* TakePictureNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureNavigationController.m; sourceTree = "<group>"; };
+		2A2F144515B355E60038FDAF /* upload_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload_note.png; sourceTree = "<group>"; };
+		2A2F144715B359890038FDAF /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		2A2F144815B359890038FDAF /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		2A7E431315A9A8830076D363 /* goalsetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsetting.png; sourceTree = "<group>"; };
 		2A7E432215AC690E0076D363 /* welcome screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome screen.png"; sourceTree = "<group>"; };
 		2A7E432515AC6A220076D363 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -350,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				2A7E432215AC690E0076D363 /* welcome screen.png */,
+				2A2F144515B355E60038FDAF /* upload_note.png */,
 				2A7E431315A9A8830076D363 /* goalsetting.png */,
 			);
 			name = Wireframe;
@@ -377,6 +383,8 @@
 				2AD2128F15B139C300EE0203 /* KeychainWrapper.h */,
 				2AD2129015B139C300EE0203 /* KeychainWrapper.m */,
 				2AD2129D15B14F4200EE0203 /* HappyConstant.h */,
+				2A2F144715B359890038FDAF /* UIPlaceHolderTextView.h */,
+				2A2F144815B359890038FDAF /* UIPlaceHolderTextView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -490,6 +498,7 @@
 				2A2F143115B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg in Resources */,
 				2A2F143315B30D2D0038FDAF /* look.com.ua-43852.jpeg in Resources */,
 				2A2F143515B30EF60038FDAF /* close.png in Resources */,
+				2A2F144615B355E60038FDAF /* upload_note.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +561,7 @@
 				2A2F143815B30F5B0038FDAF /* Thing.m in Sources */,
 				2A2F143E15B32A910038FDAF /* PhotoUploadPrepareViewController.m in Sources */,
 				2A2F144415B332610038FDAF /* TakePictureNavigationController.m in Sources */,
+				2A2F144915B359890038FDAF /* UIPlaceHolderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
