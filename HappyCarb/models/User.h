@@ -17,9 +17,9 @@
     
 }
 
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSString *password;
-@property (nonatomic, copy) NSString *api_key;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic, retain) NSString *api_key;
 
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;

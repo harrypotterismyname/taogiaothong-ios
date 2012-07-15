@@ -298,7 +298,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WfM-oB-jSK">
-                                <rect key="frame" x="262" y="10" width="38" height="38"/>
+                                <rect key="frame" x="263" y="9" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="close.png">
@@ -459,7 +459,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="close.png" width="42" height="42"/>
+        <image name="close.png" width="48" height="48"/>
         <image name="goalsetting.png" width="492" height="334"/>
         <image name="look.com.ua-43852.jpeg" width="640" height="960"/>
         <image name="notok68.png" width="68" height="68"/>

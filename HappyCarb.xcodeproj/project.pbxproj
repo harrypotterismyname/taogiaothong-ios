@@ -12,7 +12,6 @@
 		2A2F13EA15B1BB7D0038FDAF /* MainUINagivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13E915B1BB7D0038FDAF /* MainUINagivationViewController.m */; };
 		2A2F13F615B1D7C30038FDAF /* TodoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F13F515B1D7C30038FDAF /* TodoController.m */; };
 		2A2F140515B1E5120038FDAF /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F140415B1E5120038FDAF /* CaptureViewController.m */; };
-		2A2F141215B2D2690038FDAF /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F141115B2D2690038FDAF /* close.png */; };
 		2A2F141915B2D54A0038FDAF /* ok_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F141715B2D54A0038FDAF /* ok_bg.png */; };
 		2A2F141A15B2D54A0038FDAF /* notok_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F141815B2D54A0038FDAF /* notok_bg.png */; };
 		2A2F141D15B2D56B0038FDAF /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F141B15B2D56B0038FDAF /* ok.png */; };
@@ -27,6 +26,8 @@
 		2A2F142F15B2E4F30038FDAF /* ok68.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F142D15B2E4F20038FDAF /* ok68.png */; };
 		2A2F143115B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F143015B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg */; };
 		2A2F143315B30D2D0038FDAF /* look.com.ua-43852.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F143215B30D2D0038FDAF /* look.com.ua-43852.jpeg */; };
+		2A2F143515B30EF60038FDAF /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F143415B30EF60038FDAF /* close.png */; };
+		2A2F143815B30F5B0038FDAF /* Thing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F143715B30F5B0038FDAF /* Thing.m */; };
 		2A7E431415A9A8830076D363 /* goalsetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E431315A9A8830076D363 /* goalsetting.png */; };
 		2A7E432315AC690E0076D363 /* welcome screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E432215AC690E0076D363 /* welcome screen.png */; };
 		2A7E432715AC6A220076D363 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E432615AC6A220076D363 /* LoginViewController.m */; };
@@ -86,7 +87,6 @@
 		2A2F13F515B1D7C30038FDAF /* TodoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoController.m; sourceTree = "<group>"; };
 		2A2F140315B1E5120038FDAF /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
 		2A2F140415B1E5120038FDAF /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
-		2A2F141115B2D2690038FDAF /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = ../../../../Desktop/close.png; sourceTree = "<group>"; };
 		2A2F141715B2D54A0038FDAF /* ok_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok_bg.png; sourceTree = "<group>"; };
 		2A2F141815B2D54A0038FDAF /* notok_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notok_bg.png; sourceTree = "<group>"; };
 		2A2F141B15B2D56B0038FDAF /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok.png; sourceTree = "<group>"; };
@@ -101,6 +101,9 @@
 		2A2F142D15B2E4F20038FDAF /* ok68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok68.png; sourceTree = "<group>"; };
 		2A2F143015B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg; sourceTree = "<group>"; };
 		2A2F143215B30D2D0038FDAF /* look.com.ua-43852.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "look.com.ua-43852.jpeg"; sourceTree = "<group>"; };
+		2A2F143415B30EF60038FDAF /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		2A2F143615B30F5B0038FDAF /* Thing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thing.h; sourceTree = "<group>"; };
+		2A2F143715B30F5B0038FDAF /* Thing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thing.m; sourceTree = "<group>"; };
 		2A7E431315A9A8830076D363 /* goalsetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsetting.png; sourceTree = "<group>"; };
 		2A7E432215AC690E0076D363 /* welcome screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome screen.png"; sourceTree = "<group>"; };
 		2A7E432515AC6A220076D363 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 			children = (
 				2A7E4A1D15ADCF9A0076D363 /* User.h */,
 				2A7E4A1E15ADCF9A0076D363 /* User.m */,
+				2A2F143615B30F5B0038FDAF /* Thing.h */,
+				2A2F143715B30F5B0038FDAF /* Thing.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -378,7 +383,7 @@
 				2A2F141715B2D54A0038FDAF /* ok_bg.png */,
 				2A2F141815B2D54A0038FDAF /* notok_bg.png */,
 				2AD212A515B171CE00EE0203 /* icon.png */,
-				2A2F141115B2D2690038FDAF /* close.png */,
+				2A2F143415B30EF60038FDAF /* close.png */,
 				2AD212A715B1720D00EE0203 /* Icon@2x.png */,
 			);
 			name = Images;
@@ -460,7 +465,6 @@
 				2A7E432315AC690E0076D363 /* welcome screen.png in Resources */,
 				2AD212A615B171CE00EE0203 /* icon.png in Resources */,
 				2AD212A815B1720D00EE0203 /* Icon@2x.png in Resources */,
-				2A2F141215B2D2690038FDAF /* close.png in Resources */,
 				2A2F141915B2D54A0038FDAF /* ok_bg.png in Resources */,
 				2A2F141A15B2D54A0038FDAF /* notok_bg.png in Resources */,
 				2A2F141D15B2D56B0038FDAF /* ok.png in Resources */,
@@ -475,6 +479,7 @@
 				2A2F142F15B2E4F30038FDAF /* ok68.png in Resources */,
 				2A2F143115B307F60038FDAF /* colorful_patterns_textures_3600x3600_wallpaper_Wallpaper_640x960_www.wallpaperswa.com.jpg in Resources */,
 				2A2F143315B30D2D0038FDAF /* look.com.ua-43852.jpeg in Resources */,
+				2A2F143515B30EF60038FDAF /* close.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +539,7 @@
 				2A2F13EA15B1BB7D0038FDAF /* MainUINagivationViewController.m in Sources */,
 				2A2F13F615B1D7C30038FDAF /* TodoController.m in Sources */,
 				2A2F140515B1E5120038FDAF /* CaptureViewController.m in Sources */,
+				2A2F143815B30F5B0038FDAF /* Thing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
