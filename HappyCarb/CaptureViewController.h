@@ -19,6 +19,7 @@
 @property (nonatomic, retain) UIImagePickerController *imgPicker;
 
 
+@property(nonatomic,retain)IBOutlet UIBarButtonItem *saveImageBotton;
 - (IBAction)grabImage;
 
 

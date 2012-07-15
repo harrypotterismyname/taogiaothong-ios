@@ -216,7 +216,6 @@
 		2AA0A5B715A7F9060084892E = {
 			isa = PBXGroup;
 			children = (
-				2AD212A215B1524500EE0203 /* Security.framework */,
 				2AA0A5CC15A7F9070084892E /* HappyCarb */,
 				2AA0A5EA15A7F9070084892E /* HappyCarbTests */,
 				2AA0A5C515A7F9070084892E /* Frameworks */,
@@ -236,6 +235,7 @@
 		2AA0A5C515A7F9070084892E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AD212A215B1524500EE0203 /* Security.framework */,
 				2AA0A5C615A7F9070084892E /* UIKit.framework */,
 				2AA0A5C815A7F9070084892E /* Foundation.framework */,
 				2AA0A5CA15A7F9070084892E /* CoreGraphics.framework */,
