@@ -32,6 +32,8 @@
 		2A2F144415B332610038FDAF /* TakePictureNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F144315B3325E0038FDAF /* TakePictureNavigationController.m */; };
 		2A2F144615B355E60038FDAF /* upload_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F144515B355E60038FDAF /* upload_note.png */; };
 		2A2F144915B359890038FDAF /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F144815B359890038FDAF /* UIPlaceHolderTextView.m */; };
+		2A2F144C15B3D2160038FDAF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F144A15B3D2130038FDAF /* icon.png */; };
+		2A2F144D15B3D2160038FDAF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F144B15B3D2140038FDAF /* Icon@2x.png */; };
 		2A7E431415A9A8830076D363 /* goalsetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E431315A9A8830076D363 /* goalsetting.png */; };
 		2A7E432315AC690E0076D363 /* welcome screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E432215AC690E0076D363 /* welcome screen.png */; };
 		2A7E432715AC6A220076D363 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E432615AC6A220076D363 /* LoginViewController.m */; };
@@ -63,8 +65,6 @@
 		2AA0A5F215A7F9070084892E /* HappyCarbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0A5F115A7F9070084892E /* HappyCarbTests.m */; };
 		2AD2129115B139C300EE0203 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129015B139C300EE0203 /* KeychainWrapper.m */; };
 		2AD212A315B1524500EE0203 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD212A215B1524500EE0203 /* Security.framework */; };
-		2AD212A615B171CE00EE0203 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD212A515B171CE00EE0203 /* icon.png */; };
-		2AD212A815B1720D00EE0203 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD212A715B1720D00EE0203 /* Icon@2x.png */; };
 		2AD212A915B1727900EE0203 /* KeychainWrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2128F15B139C300EE0203 /* KeychainWrapper.h */; };
 		2AD212AA15B1727900EE0203 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129015B139C300EE0203 /* KeychainWrapper.m */; };
 		2AD212AB15B1727900EE0203 /* HappyConstant.h in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2129D15B14F4200EE0203 /* HappyConstant.h */; };
@@ -115,6 +115,8 @@
 		2A2F144515B355E60038FDAF /* upload_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload_note.png; sourceTree = "<group>"; };
 		2A2F144715B359890038FDAF /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		2A2F144815B359890038FDAF /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		2A2F144A15B3D2130038FDAF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2A2F144B15B3D2140038FDAF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		2A7E431315A9A8830076D363 /* goalsetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsetting.png; sourceTree = "<group>"; };
 		2A7E432215AC690E0076D363 /* welcome screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome screen.png"; sourceTree = "<group>"; };
 		2A7E432515AC6A220076D363 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -169,8 +171,6 @@
 		2AD2129015B139C300EE0203 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		2AD2129D15B14F4200EE0203 /* HappyConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyConstant.h; sourceTree = "<group>"; };
 		2AD212A215B1524500EE0203 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2AD212A515B171CE00EE0203 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../hlc wireframe/icon.png"; sourceTree = "<group>"; };
-		2AD212A715B1720D00EE0203 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../../hlc wireframe/Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +392,8 @@
 		2AD212A415B171B500EE0203 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2A2F144A15B3D2130038FDAF /* icon.png */,
+				2A2F144B15B3D2140038FDAF /* Icon@2x.png */,
 				2A2F142115B2DFD30038FDAF /* bg */,
 				2A2F141F15B2DA360038FDAF /* footer_bg.png */,
 				2A2F141B15B2D56B0038FDAF /* ok.png */,
@@ -400,9 +402,7 @@
 				2A2F141C15B2D56B0038FDAF /* notok.png */,
 				2A2F141715B2D54A0038FDAF /* ok_bg.png */,
 				2A2F141815B2D54A0038FDAF /* notok_bg.png */,
-				2AD212A515B171CE00EE0203 /* icon.png */,
 				2A2F143415B30EF60038FDAF /* close.png */,
-				2AD212A715B1720D00EE0203 /* Icon@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -481,8 +481,6 @@
 				2AA0A5DA15A7F9070084892E /* MainStoryboard.storyboard in Resources */,
 				2A7E431415A9A8830076D363 /* goalsetting.png in Resources */,
 				2A7E432315AC690E0076D363 /* welcome screen.png in Resources */,
-				2AD212A615B171CE00EE0203 /* icon.png in Resources */,
-				2AD212A815B1720D00EE0203 /* Icon@2x.png in Resources */,
 				2A2F141915B2D54A0038FDAF /* ok_bg.png in Resources */,
 				2A2F141A15B2D54A0038FDAF /* notok_bg.png in Resources */,
 				2A2F141D15B2D56B0038FDAF /* ok.png in Resources */,
@@ -499,6 +497,8 @@
 				2A2F143315B30D2D0038FDAF /* look.com.ua-43852.jpeg in Resources */,
 				2A2F143515B30EF60038FDAF /* close.png in Resources */,
 				2A2F144615B355E60038FDAF /* upload_note.png in Resources */,
+				2A2F144C15B3D2160038FDAF /* icon.png in Resources */,
+				2A2F144D15B3D2160038FDAF /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
