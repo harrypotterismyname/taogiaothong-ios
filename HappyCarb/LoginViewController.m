@@ -87,6 +87,20 @@
     
        
     [self.delegate LoginViewControllerDidSave:self];
+    
+    [self NavigateToHomeFeed   ];
+    
+    
+}
+
+
+- (void)NavigateToHomeFeed
+{
+    
+    UITabBarController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    
+    [self.navigationController presentModalViewController:controller animated:FALSE];
+    
 }
 
 - (void)LoginViewControllerDidSave:

@@ -46,7 +46,7 @@
 - (void)NavigateToSplashScreen
 {
     
-    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SplashscreenController"];
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MainUINagivation"];
     
     [self.navigationController presentModalViewController:controller animated:FALSE];
     

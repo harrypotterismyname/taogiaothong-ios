@@ -69,7 +69,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
         
         [self.tableView reloadData];
         
-        [self.tableView.pullToRefreshView performSelector:@selector(stopAnimating) withObject:nil afterDelay:2];
+        [self.tableView.pullToRefreshView performSelector:@selector(stopAnimating) withObject:nil afterDelay:1];
     }];
     
     [self.tableView addInfiniteScrollingWithActionHandler:^{
