@@ -1,0 +1,26 @@
+//
+//  RemoteConnection.h
+//  xMen
+//
+//  Created by Paul (Chi Kien) on 6/25/12.
+//  Copyright (c) 2012 AMAS HUB. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface RemoteConnection : NSObject
+{
+    NSMutableDictionary *connDict;
+}
+@property (nonatomic, retain) NSMutableDictionary *connDict;
++(id)sharedManager;
+-(void)getContentWithType:(NSString *)type andLastUpdateTime:(double )lastUp;
+#pragma mark - Get image
+-(void)getContentImageWithURL:(NSString *)url andContentID:(int )contentID;
+#pragma mark - Get content detail
+-(void)getContentDetailWithCateID:(int )cateID;
+#pragma mark - Like 
+-(void)likeContentDetailWithCateID:(int )cateID;
+#pragma mark - send email 
+-(void)sendEmailWithEmaillAdd:(NSString *)emailAdd;
+@end

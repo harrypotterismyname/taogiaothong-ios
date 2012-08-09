@@ -1,0 +1,205 @@
+//
+//  RemoteConnection.m
+//  xMen
+//
+//  Created by Paul (Chi Kien) on 6/25/12.
+//  Copyright (c) 2012 AMAS HUB. All rights reserved.
+//
+
+#import "RemoteConnection.h"
+#import "ContentConnection.h"
+#import "Constants.h"
+#import "Utilities.h"
+#import "DataParser.h"
+
+#define EVENT_CONN @"EVENT_CONN"
+#define IMAGE_CONN @"IMAGE_CONN"
+#define CATE_DETAIL_CONN @"CATE_DETAIL_CONN"
+#define LIKE_CONN @"LIKE_CONN"
+#define SEND_EMAIL_CONN @"SEND_EMAIL_CONN"
+
+static RemoteConnection *sharedRemoteManager;
+
+@implementation RemoteConnection
+@synthesize connDict;
+
++(id)sharedManager{
+    
+	@synchronized(self){
+		if(sharedRemoteManager == nil)
+		{
+			sharedRemoteManager = [[self alloc] init];
+		}
+	}
+    
+	return sharedRemoteManager;
+}
+-(id)init
+{
+    self = [super init];
+    if(self)
+    {
+//    	appDelegate = (iCatalogAppDelegate*)[[UIApplication sharedApplication] delegate];
+        
+        NSMutableDictionary *dict   = [[NSMutableDictionary alloc] init];
+        self.connDict               = dict;
+        [dict release];
+        
+    }
+    return self;
+}
+#pragma mark - Get Order Date _ Requestship Date by chanel ID
+-(void)getContentWithType:(NSString *)type andLastUpdateTime:(double )lastUp
+{
+    ContentConnection *conn = [[ContentConnection alloc] initWithDelegate:self  completedCallbackSelector:@selector(getContentSuccessful:) 
+                                                failedCalbackSelector:@selector(getContentFail:)];
+    conn.contentTabKey = type;
+    [conn getContentWithType:type AndLastUpdate:lastUp];
+    [self.connDict setObject:conn forKey:EVENT_CONN];
+    [conn release];
+}
+-(void)getContentSuccessful:(id )sender
+{
+    ContentConnection *conn = (ContentConnection*)sender;
+    NSString *result = [[NSString alloc] initWithData:conn.downloadedData encoding:NSUTF8StringEncoding];
+    NSMutableArray *listContents = [Utilities parseListContentWith:result];
+    [DataParser allocStoreListCategory:listContents AndCateType:conn.contentTabKey];
+    [[NSNotificationCenter defaultCenter] postNotificationName:GET_CONTENT_DATA_NOTIFICATION object:listContents];
+
+    [listContents release];
+    [result release];
+    [self.connDict removeObjectForKey:EVENT_CONN];
+    
+}
+-(void)getContentFail:(id )sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:GET_CONTENT_DATA_NOTIFICATION object:nil];
+    [self.connDict removeObjectForKey:EVENT_CONN];
+    
+}
+
+#pragma mark - Get image
+-(void)getContentImageWithURL:(NSString *)url andContentID:(int )contentID
+{
+    ContentConnection *conn = [[ContentConnection alloc] initWithDelegate:self  completedCallbackSelector:@selector(getImageSuccessful:) 
+                                                    failedCalbackSelector:@selector(getImageFail:)];
+    conn.connectionKey = contentID;
+    
+    [conn getImageWithURL:url];
+    [self.connDict setObject:conn forKey:IMAGE_CONN];
+    [conn release];
+}
+-(void)getImageSuccessful:(id )sender
+{
+    ContentConnection *conn = (ContentConnection*)sender;
+    UIImage *img = [UIImage imageWithData:conn.downloadedData];
+    [Utilities saveImage:img :[NSString stringWithFormat:@"%d",conn.connectionKey]];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:GET_CONTENT_IMAGE_NOTIFICATION object:img];
+    [self.connDict removeObjectForKey:IMAGE_CONN];
+    
+}
+-(void)getImageFail:(id )sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:GET_CONTENT_IMAGE_NOTIFICATION object:nil];
+    [self.connDict removeObjectForKey:IMAGE_CONN];
+}
+
+#pragma mark - Get content detail
+-(void)getContentDetailWithCateID:(int )cateID
+{
+    ContentConnection *conn = [[ContentConnection alloc] 
+                               initWithDelegate:self 
+                               completedCallbackSelector:@selector(getContentDetailSuccessful:) 
+                               failedCalbackSelector:@selector(getContentDetailFail:)];
+    
+    [conn getContentDetailWithCateID:cateID];
+    [self.connDict setObject:conn forKey:CATE_DETAIL_CONN];
+    [conn release];
+}
+-(void)getContentDetailSuccessful:(id )sender
+{
+    ContentConnection *conn = (ContentConnection*)sender;
+       
+    NSString *result = [[NSString alloc] initWithData:conn.downloadedData encoding:NSUTF8StringEncoding];
+    
+    Content *content = [Utilities parseContentWith:result];
+    [DataParser allocStoreCategoryDetail:content];
+    
+    //    [[NSNotificationCenter defaultCenter] postNotificationName:GET_CONTENT_DETAIL_NOTIFICATION object:content];
+    [content release];
+    [result release];
+    [self.connDict removeObjectForKey:CATE_DETAIL_CONN];
+    
+}
+-(void)getContentDetailFail:(id )sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:LIKE_CONN object:nil];
+    [self.connDict removeObjectForKey:CATE_DETAIL_CONN];
+    
+}
+
+#pragma mark - Like 
+-(void)likeContentDetailWithCateID:(int )cateID
+{
+    ContentConnection *conn = [[ContentConnection alloc] 
+                               initWithDelegate:self 
+                               completedCallbackSelector:@selector(likeContentDetailSuccessful:) 
+                               failedCalbackSelector:@selector(likeContentDetailFail:)];
+    
+    [conn likeContentDetailWithCateID:cateID];
+    [self.connDict setObject:conn forKey:LIKE_CONN];
+    [conn release];
+}
+-(void)likeContentDetailSuccessful:(id )sender
+{
+    ContentConnection *conn = (ContentConnection*)sender;
+    
+    NSString *result = [[NSString alloc] initWithData:conn.downloadedData encoding:NSUTF8StringEncoding];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:LIKE_CONTENT_DETAIL_NOTIFICATION object:result];
+    
+    [result release];
+    [self.connDict removeObjectForKey:LIKE_CONN];
+    
+}
+-(void)likeContentDetailFail:(id )sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:LIKE_CONTENT_DETAIL_NOTIFICATION object:nil];
+    [self.connDict removeObjectForKey:LIKE_CONN];
+    
+}
+
+#pragma mark - send email 
+-(void)sendEmailWithEmaillAdd:(NSString *)emailAdd
+{
+    ContentConnection *conn = [[ContentConnection alloc] 
+                               initWithDelegate:self 
+                               completedCallbackSelector:@selector(sendEmailWithEmaillAddSuccessful:) 
+                               failedCalbackSelector:@selector(sendEmailWithEmaillAddFail:)];
+    
+    [conn sendEmail:emailAdd];
+    [self.connDict setObject:conn forKey:SEND_EMAIL_CONN];
+    [conn release];
+}
+-(void)sendEmailWithEmaillAddSuccessful:(id )sender
+{
+    ContentConnection *conn = (ContentConnection*)sender;
+    
+    NSString *result = [[NSString alloc] initWithData:conn.downloadedData encoding:NSUTF8StringEncoding];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:SEND_EMAIL_NOTIFICATION object:result];
+    
+    [result release];
+    [self.connDict removeObjectForKey:SEND_EMAIL_CONN];
+    
+}
+-(void)sendEmailWithEmaillAddFail:(id )sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:SEND_EMAIL_NOTIFICATION object:nil];
+    [self.connDict removeObjectForKey:LIKE_CONN];
+    
+}
+
+
+@end

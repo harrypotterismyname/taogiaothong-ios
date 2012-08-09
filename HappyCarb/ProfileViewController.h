@@ -10,4 +10,12 @@
 
 @interface ProfileViewController : UITableViewController
 
+
+@property (nonatomic, strong) NSArray *Feeds;
+@property(nonatomic,retain)IBOutlet UIButton *refreshButton;
+@property  (nonatomic) NSInteger page;
+-(IBAction)refreshAction:(id)sender;
+
+
+
 @end

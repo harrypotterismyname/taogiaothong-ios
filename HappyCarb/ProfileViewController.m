@@ -8,6 +8,12 @@
 
 #import "ProfileViewController.h"
 #import "ProfileStatsCell.h"
+#import "FeedCell.h"
+#import "Todo.h"
+#import "Thing.h"
+#import "SVPullToRefresh.h"
+
+
 
 
 //ref: http://cocoamatic.blogspot.com/2010/07/uicolor-macro-with-hex-values.html
@@ -31,6 +37,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 @implementation ProfileViewController
 
+@synthesize Feeds;
+@synthesize page= _page;
+
+
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -43,6 +54,27 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _page = 1;
+    
+    Feeds = [Thing findAllRemote: _page];
+    
+    
+    
+    //https://github.com/samvermette/SVPullToRefresh
+    // setup the pull-to-refresh view
+    
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        self.page = self.page + 1;
+        self.Feeds=   [Thing findAllRemote: _page];
+        
+        [self.tableView reloadData];
+        
+        [self.tableView.infiniteScrollingView performSelector:@selector(stopAnimating) withObject:nil afterDelay:1];
+    }];
+    
+    
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -74,9 +106,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;//ghi đại 3 hàng cho dzui
+    return     [Feeds count] + 1;
 }
 
 
@@ -96,7 +128,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"profilecell";
-    ProfileStatsCell *cell = (ProfileStatsCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     
     
@@ -109,15 +140,36 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
     if (indexPath.row == 0)
     {
         
+        ProfileStatsCell *cell = (ProfileStatsCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
           cell = [[ProfileStatsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+        return cell;
        // cell.backgroundColor = [UIColor redColor];
      //   cell.backgroundView = backgroundView;
+    }
+    else
+        
+    {
+        FeedCell * cell = (FeedCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        
+        Thing * thing = ((Thing *)[Feeds objectAtIndex:(indexPath.row - 1)]);  //[[Thing alloc] init];
+        
+       // if(cell == nil) {
+            
+            cell = [[FeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier thing:thing show_avatar:false];
+            
+           
+      //  }
+        return cell;
+        
     }
     
     // Configure the cell...
     
-    return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.

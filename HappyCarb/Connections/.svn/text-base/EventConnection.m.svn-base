@@ -1,0 +1,43 @@
+//
+//  EventConnection.m
+//  xMen
+//
+//  Created by Paul (Chi Kien) on 6/25/12.
+//  Copyright (c) 2012 AMAS HUB. All rights reserved.
+//
+
+#import "EventConnection.h"
+#import "Constants.h"
+#define CONTENT_URL @"http://forboss.com.vn/api/mobile/posts/"
+
+
+@implementation EventConnection
+
+- (id)initWithDelegate:(id)aDelegateInput completedCallbackSelector:(SEL)aCompletedCallbackSelector failedCalbackSelector:(SEL)aFailedCalbackSelector
+{
+    self=[super init];
+    if (self) {
+        delegate                   = aDelegateInput;
+        completedCallbackSelector  = aCompletedCallbackSelector;
+        failedCalbackSelector      = aFailedCalbackSelector;
+    }
+    return self;
+}
+-(void)getContentWithType:(NSString *)type
+{
+    NSString *url = [[NSString alloc] initWithFormat:@"%@%@",CONTENT_URL,type];
+    [super startRequestWithURL:url
+                    httpMethod:@"GET"
+                      httpBody:nil
+                   contentType:@"application/json; charset=utf-8"
+                     actionURI:nil
+                       timeOut:CONNECTION_TIMEOUT
+                      delegate:delegate
+             completedCallback:completedCallbackSelector
+        authenticationCallback:nil
+                failedCallback:failedCalbackSelector
+                      username:nil
+                      password:nil];
+    [url release];
+}
+@end

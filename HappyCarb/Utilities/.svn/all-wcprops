@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/60/trunk/xMen/Classes/Utilities
+END
+RemoteConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/49/trunk/xMen/Classes/Utilities/RemoteConnection.h
+END
+Utilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/61/trunk/xMen/Classes/Utilities/Utilities.h
+END
+Constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/61/trunk/xMen/Classes/Utilities/Constants.h
+END
+RemoteConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/61/trunk/xMen/Classes/Utilities/RemoteConnection.m
+END
+Utilities.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/61/trunk/xMen/Classes/Utilities/Utilities.m
+END

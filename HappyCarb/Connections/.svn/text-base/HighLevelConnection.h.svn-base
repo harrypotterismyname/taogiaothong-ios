@@ -1,0 +1,18 @@
+//
+//  HighLevelConnection.h
+//  CoNAV
+//
+//  Created by William (Van Thuong) on 5/2/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import "BaseConnection.h"
+
+@interface HighLevelConnection : BaseConnection
+{
+    id	delegate;
+	SEL completedCallbackSelector;
+	SEL failedCalbackSelector;
+}
+- (id)initWithDelegate:(id)aDelegateInput completedCallbackSelector:(SEL)aCompletedCallbackSelector failedCalbackSelector:(SEL)aFailedCalbackSelector;
+@end

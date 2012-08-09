@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Thing;
+#import "Thing.h"
 
 @interface ThingView : UIView
 
@@ -16,8 +16,10 @@
     
 }
 
-@property (strong) Thing *thing;
+@property (nonatomic,strong) Thing *thing;
+@property (nonatomic) Boolean show_avatar;
 
+- (id)initWithFrame:(CGRect)frame with_thing:  (Thing *) thing show_avatar:(Boolean) show_avatar;
 
 
 

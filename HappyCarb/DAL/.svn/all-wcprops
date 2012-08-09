@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/56/trunk/xMen/Classes/DAL
+END
+SqlManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/24/trunk/xMen/Classes/DAL/SqlManager.h
+END
+DataParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/61/trunk/xMen/Classes/DAL/DataParser.m
+END
+FMDatabaseAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/23/trunk/xMen/Classes/DAL/FMDatabaseAdditions.m
+END
+FMDatabase.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/23/trunk/xMen/Classes/DAL/FMDatabase.m
+END
+FMResultSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/23/trunk/xMen/Classes/DAL/FMResultSet.h
+END
+SqlManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/24/trunk/xMen/Classes/DAL/SqlManager.m
+END
+FMResultSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/23/trunk/xMen/Classes/DAL/FMResultSet.m
+END
+DataParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/61/trunk/xMen/Classes/DAL/DataParser.h
+END
+FMDatabaseAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/23/trunk/xMen/Classes/DAL/FMDatabaseAdditions.h
+END
+FMDatabase.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/23/trunk/xMen/Classes/DAL/FMDatabase.h
+END

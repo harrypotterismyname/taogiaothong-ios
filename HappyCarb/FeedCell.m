@@ -21,7 +21,7 @@
 @synthesize actionCell = _actionCell;
 
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier thing:(Thing*)thing
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier thing:(Thing*)thing show_avatar: (Boolean) show_avatar
 {
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -30,8 +30,9 @@
         
        // [self.contentView addSubview:self.optionView];
         
-        self.thingView = [[ThingView alloc] initWithFrame:CGRectMake(0, 0, 320, 368)];
-        self.thingView.thing = thing;
+        
+        self.thingView = [[ThingView alloc] initWithFrame:CGRectMake(0, 0, 320, 368) with_thing:thing show_avatar:show_avatar];
+//        self.thingView.thing = thing;
         [self.contentView addSubview:self.thingView];
         
         self.actionCell = NO;

@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "User.h"
+
 #import "SBJson.h"
 
 #import "HappyConstant.h"
@@ -82,10 +82,7 @@
 
     
    // username_text.text = [KeychainWrapper keychainStringFromMatchingIdentifier:@"api_key"];
-    
-    
-    
-       
+
     [self.delegate LoginViewControllerDidSave:self];
     
     [self NavigateToHomeFeed   ];

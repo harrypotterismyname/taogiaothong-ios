@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/60/trunk/xMen/Classes/Connections
+END
+BaseConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4/trunk/xMen/Classes/Connections/BaseConnection.h
+END
+ContentConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/49/trunk/xMen/Classes/Connections/ContentConnection.h
+END
+HighLevelConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/xMen/Classes/Connections/HighLevelConnection.m
+END
+BaseConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4/trunk/xMen/Classes/Connections/BaseConnection.m
+END
+ContentConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/61/trunk/xMen/Classes/Connections/ContentConnection.m
+END
+EventConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/trunk/xMen/Classes/Connections/EventConnection.h
+END
+EventConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/trunk/xMen/Classes/Connections/EventConnection.m
+END
+HighLevelConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/xMen/Classes/Connections/HighLevelConnection.h
+END

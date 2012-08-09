@@ -215,7 +215,9 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([[segue identifier] isEqualToString:@"PhotoUploadPrepareSegue"]){
-        PhotoUploadPrepareViewController *cvc = (PhotoUploadPrepareViewController *)[segue destinationViewController];
+        //PhotoUploadPrepareViewController *cvc =
+        
+        (PhotoUploadPrepareViewController *)[segue destinationViewController];
         
         
 

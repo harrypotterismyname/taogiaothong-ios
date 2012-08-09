@@ -10,6 +10,7 @@
 #import "FeedCell.h"
 #import "Todo.h"
 #import "Thing.h"
+#import "SVPullToRefresh.h"
 
 @interface HomeFeedTableViewController ()
 
@@ -18,6 +19,7 @@
 @implementation HomeFeedTableViewController
 
 @synthesize Feeds;
+@synthesize page= _page;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -32,8 +34,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _page = 1;
     
-    Feeds = [Todo findAllRemote];
+    Feeds = [Thing findAllRemote: _page];
+    
+    
+    
+    //https://github.com/samvermette/SVPullToRefresh
+    // setup the pull-to-refresh view
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        NSLog(@"refresh dataSource");
+        
+        self.Feeds=   [Thing findAllRemote: _page];
+        
+        [self.tableView reloadData];
+        
+        [self.tableView.pullToRefreshView performSelector:@selector(stopAnimating) withObject:nil afterDelay:1];
+    }];
+    
+    
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        self.page = self.page + 1;
+        self.Feeds=   [Thing findAllRemote: _page];
+        
+        [self.tableView reloadData];
+        
+           [self.tableView.infiniteScrollingView performSelector:@selector(stopAnimating) withObject:nil afterDelay:1];
+    }];
+    
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -78,13 +107,13 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = ((Todo *)[Feeds objectAtIndex:[indexPath row]]).name;
+    //cell.textLabel.text = ((Thing *)[Feeds objectAtIndex:[indexPath row]]).note;
     
-    Thing * thing = [[Thing alloc] init];
+    Thing * thing = ((Thing *)[Feeds objectAtIndex:[indexPath row]]);  //[[Thing alloc] init];
     
     if(cell == nil) {
         
-        cell = [[FeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier thing:thing];
+        cell = [[FeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier thing:thing show_avatar:true];
         
        // UIViewController *temp = [[UIViewController alloc]initWithNibName:CellIdentifier      bundle:nil];
         

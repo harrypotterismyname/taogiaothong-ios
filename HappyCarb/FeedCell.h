@@ -26,6 +26,6 @@
 @property (assign) BOOL actionCell;
 
 //- (void) deactivateCell;
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier thing:(Thing*)thing;
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier thing:(Thing*)thing show_avatar: (Boolean)show_avatar;
 //- (void) touchesDone:(NSSet*)touches;
 @end

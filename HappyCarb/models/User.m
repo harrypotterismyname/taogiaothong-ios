@@ -11,10 +11,11 @@
 
 @implementation User
 
-@synthesize username;
+@synthesize username, user_id;
 @synthesize password;
 @synthesize api_key;
-
+@synthesize email;
+@synthesize country;
 
 - (id) initWithDictionary:(NSDictionary *)dictionary    
 {
@@ -22,6 +23,7 @@
         self.username      = [dictionary valueForKey:@"username"];
         self.password    = [dictionary valueForKey:@"password"];
         self.api_key    = [dictionary valueForKey:@"api_key"];
+        self.avatar_url     = [dictionary valueForKey:@"avatar_url"];
     }
     return self;
 }
@@ -35,7 +37,6 @@
     NSString *login_url = [NSString stringWithFormat:@"http://happycarb.com/login.json?user_session[username]=%@&user_session[password]=%@", self.username, self.password];
     
   
-    
     NSURL *url = [NSURL URLWithString: login_url];
     
     NSError *error = nil;
@@ -59,6 +60,7 @@
 
             
             self.api_key = [results valueForKey:@"api_key"];
+            self.user_id = [[results valueForKey:@"id"] integerValue];
           
       
   //      }
