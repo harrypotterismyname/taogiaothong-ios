@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QG0-L8-BGv">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller - MainTabBarController-->
+        <scene sceneID="qLh-wa-64i">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2O4-XI-dym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="MainTabBarController" title="MainTabBarController" definesPresentationContext="YES" id="oHE-On-aqa" customClass="MainTabBarController" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9GF-Xb-ZQJ"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="F0f-3i-LXx">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eBa-mB-fzx" kind="relationship" relationship="viewControllers" id="7Ef-LM-S9b"/>
+                        <segue destination="9H8-st-xIx" kind="relationship" relationship="viewControllers" id="Mm1-hN-DQC"/>
+                        <segue destination="UMW-yK-Uo7" kind="relationship" relationship="viewControllers" id="g7Y-0S-gwj"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="894" y="-1774"/>
+        </scene>
+        <!--Home View Controller - Home-->
+        <scene sceneID="7v9-3r-KLm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N19-BW-uU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Home" id="eBa-mB-fzx" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="grf-vZ-nkN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="5XC-lw-Nsv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eBa-mB-fzx" id="UfB-eE-uca"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="icon-home.png" id="RTh-aO-8V6"/>
+                    <connections>
+                        <outlet property="webView" destination="5XC-lw-Nsv" id="ooi-DA-Srr"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1487" y="-2317"/>
+        </scene>
+        <!--Fund View Controller - Fund Status-->
+        <scene sceneID="qGq-bM-F7w">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XG-vk-sBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="UMW-yK-Uo7" customClass="FundViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xAM-5l-IMG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="1hL-yc-RdR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fund Status" image="icon-favourite.png" id="u3T-yQ-wgW"/>
+                    <connections>
+                        <outlet property="webView" destination="1hL-yc-RdR" id="sRF-2c-itr"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1479" y="-1010"/>
+        </scene>
+        <!--MainUI Nagivation View Controller-->
+        <scene sceneID="ATM-Q7-VjD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vk-bI-2BL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="MainUINagivation" definesPresentationContext="YES" id="QG0-L8-BGv" customClass="MainUINagivationViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5Nd-zF-WZI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oHE-On-aqa" kind="relationship" relationship="rootViewController" id="g6V-ax-sWd"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="412" y="-1779"/>
+        </scene>
+        <!--Overlay Capture View Controller-->
+        <scene sceneID="CCk-01-89o">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4U-mz-Y1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="OverLayView" id="lOm-4x-dRH" customClass="OverlayCaptureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bj4-pk-HfW">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-takePictureFrame.png" id="t8u-lq-2sE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-title.png" id="VDb-Uj-PG4">
+                                <rect key="frame" x="3" y="5" width="314" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-tabbar_TP.png" id="OHv-hO-Baa">
+                                <rect key="frame" x="0.0" y="411" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F6q-fn-bwi">
+                                <rect key="frame" x="124" y="10" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeCameraClicked:" destination="lOm-4x-dRH" eventType="touchUpInside" id="qSI-NG-m29"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Um-vF-ABv">
+                                <rect key="frame" x="125" y="411" width="72" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-takePicture.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePictureClicked:" destination="lOm-4x-dRH" eventType="touchUpInside" id="cuU-MC-F62"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KVH-Ha-sWK">
+                                <rect key="frame" x="124" y="10" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-changeCamera.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeCameraClicked:" destination="lOm-4x-dRH" eventType="touchUpInside" id="cWy-Pe-PHJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fpy-Qa-YM4">
+                                <rect key="frame" x="252" y="10" width="68" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-close.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeClicked:" destination="lOm-4x-dRH" eventType="touchUpInside" id="O1E-ch-LfY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PEF-zX-bGU">
+                                <rect key="frame" x="33" y="413" width="64" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-choosePhotoFromLib.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosePhotoFromLibClicked:" destination="lOm-4x-dRH" eventType="touchUpInside" id="54S-eN-lba"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3117" y="-1774"/>
+        </scene>
+        <!--Result Get Picture View Controller-->
+        <scene sceneID="7lu-hh-qjK">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ8-HQ-qPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ResultGetPictureView" id="gaI-Qw-wIA" customClass="ResultGetPictureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5K2-J0-bip">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-signUp.png" id="P13-vC-Hck">
+                                <rect key="frame" x="-1" y="0.0" width="323" height="511"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-title.png" id="hBV-dl-68p">
+                                <rect key="frame" x="3" y="-1" width="314" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TpT-BG-dIc">
+                                <rect key="frame" x="260" y="4" width="57" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-close.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCloseClicked:" destination="gaI-Qw-wIA" eventType="touchUpInside" id="fet-kC-jz1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="1GB-qA-FD6">
+                                <rect key="frame" x="-1" y="49" width="321" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-PreviewFrame.png" id="sNL-vk-Em9">
+                                <rect key="frame" x="0.0" y="49" width="320" height="431"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tBq-HT-6xc">
+                                <rect key="frame" x="79" y="411" width="72" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn-notOk.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="gaI-Qw-wIA" eventType="touchUpInside" id="R9c-Kq-HU1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nFO-O6-yxX">
+                                <rect key="frame" x="165" y="411" width="76" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn-ok.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBntClicked:" destination="gaI-Qw-wIA" eventType="touchUpInside" id="1v8-VQ-csC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imvReceived" destination="1GB-qA-FD6" id="IJF-nB-Thu"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3580" y="-1774"/>
+        </scene>
+        <!--Photo Upload Prepare View Controller - PhotoUploadPrepareView-->
+        <scene sceneID="mrH-VU-RF4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fq-LF-k8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="PhotoUploadPrepareView" title="PhotoUploadPrepareView" id="dd0-bL-fFw" customClass="PhotoUploadPrepareViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tib-Hq-wG0">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-signUp.png" id="QmV-vK-gFK">
+                                <rect key="frame" x="0.0" y="0.0" width="323" height="511"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-title.png" id="VgD-xa-iP1">
+                                <rect key="frame" x="6" y="7" width="314" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="POST PHOTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7Ee-g1-JFT">
+                                <rect key="frame" x="77" y="13" width="169" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FQZ-L8-kBI">
+                                <rect key="frame" x="15" y="15" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-Back.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="dd0-bL-fFw" eventType="touchUpInside" id="GnR-9E-M2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L5s-5y-wff">
+                                <rect key="frame" x="247" y="9" width="62" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="bt-Done.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnClicked:" destination="dd0-bL-fFw" eventType="touchUpInside" id="NUx-7j-jCA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" image="bg-caption.png" id="V3C-W9-AFF">
+                                <rect key="frame" x="23" y="82" width="278" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nội dung " minimumFontSize="17" id="38C-Ep-aG7">
+                                <rect key="frame" x="39" y="88" width="239" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.30530532529999999" green="0.30530532529999999" blue="0.30530532529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dd0-bL-fFw" id="Uam-Rs-akv"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phân loại" minimumFontSize="17" id="fRT-F9-Nje">
+                                <rect key="frame" x="77" y="132" width="201" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.30530532529999999" green="0.30530532529999999" blue="0.30530532529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dd0-bL-fFw" id="K8b-pF-v4h"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="line.png" id="DFA-yg-Szp">
+                                <rect key="frame" x="24" y="127" width="276" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-tag.png" id="cox-wU-LSh">
+                                <rect key="frame" x="39" y="138" width="19" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6Kk-Ej-C7x"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="txtCaptions" destination="38C-Ep-aG7" id="jJI-FW-jJg"/>
+                        <outlet property="txtTags" destination="fRT-F9-Nje" id="SEg-C8-xQb"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3997" y="-1775"/>
+        </scene>
+        <!--Navigation Controller - Report-->
+        <scene sceneID="9YN-Zl-Oq7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dV-IG-uwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="9H8-st-xIx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Report" image="Camerabt.png" id="cd6-lh-77b"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9Jv-Fn-LX3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CaQ-cv-wyC" kind="relationship" relationship="rootViewController" id="MYz-N2-tri"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1805" y="-1635"/>
+        </scene>
+        <!--Take Picture View Controller-->
+        <scene sceneID="zrK-QP-LKk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3J-Cf-0HR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="CaQ-cv-wyC" customClass="TakePictureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxA-hX-88f">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xce-wW-kBW"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2684" y="-1775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Camerabt.png" width="28" height="21"/>
+        <image name="bg-PreviewFrame.png" width="320" height="440"/>
+        <image name="bg-caption.png" width="276" height="91"/>
+        <image name="bg-signUp.png" width="320" height="480"/>
+        <image name="bg-tabbar_TP.png" width="320" height="49"/>
+        <image name="bg-takePictureFrame.png" width="320" height="480"/>
+        <image name="bg-title.png" width="314" height="46"/>
+        <image name="bt-Back.png" width="62" height="30"/>
+        <image name="bt-Done.png" width="123" height="72"/>
+        <image name="bt-changeCamera.png" width="32" height="20"/>
+        <image name="bt-choosePhotoFromLib.png" width="26" height="25"/>
+        <image name="bt-close.png" width="35" height="30"/>
+        <image name="bt-takePicture.png" width="46" height="41"/>
+        <image name="btn-notOk.png" width="25" height="27"/>
+        <image name="btn-ok.png" width="25" height="27"/>
+        <image name="icon-favourite.png" width="24" height="22"/>
+        <image name="icon-home.png" width="30" height="25"/>
+        <image name="icon-tag.png" width="19" height="20"/>
+        <image name="line.png" width="276" height="1"/>
+    </resources>
+    <classes>
+        <class className="FundViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FundViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="OverlayCaptureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OverlayCaptureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeCameraClicked:"/>
+                <relationship kind="action" name="choosePhotoFromLibClicked:"/>
+                <relationship kind="action" name="closeClicked:"/>
+                <relationship kind="action" name="takePictureClicked:"/>
+            </relationships>
+        </class>
+        <class className="PhotoUploadPrepareViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoUploadPrepareViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="txtCaptions" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtTags" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ResultGetPictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultGetPictureViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imvReceived" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="TakePictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TakePictureViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
